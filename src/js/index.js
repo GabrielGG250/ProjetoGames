@@ -1,5 +1,6 @@
 const botoesCarrossel = document.querySelectorAll('.botao');
 const imagens = document.querySelectorAll('.imagem')
+const logo = document.querySelectorAll('.logo')
 
 botoesCarrossel.forEach((botao, indice) => {
     botao.addEventListener('click', () => {
@@ -13,5 +14,11 @@ botoesCarrossel.forEach((botao, indice) => {
         imagemAtiva.classList.remove('ativa');
 
         imagens[indice].classList.add('ativa');
+
+        const logoSelecionada = document.querySelector('.ativa1')
+
+        logoSelecionada.classList.remove('ativa1');
+
+        logo[indice].classList.add('ativa1');
     })
 })

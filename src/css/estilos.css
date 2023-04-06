@@ -16,7 +16,6 @@ main:after {
 }
 
 .conteudo {
-
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -24,9 +23,13 @@ main:after {
 }
 
 .informacoes .logo {
-    max-width: 350px;
-    filter: invert(1);
-    margin-bottom: 80px;
+    max-width: 400px;
+    display: none;
+    object-fit: cover;
+}
+
+.informacoes .logo.ativa1 {
+    display: block;
 }
 
 .informacoes .descricao {
@@ -34,6 +37,7 @@ main:after {
     font-size: 1.5em;
     color: rgb(255, 255, 255);
     line-height: 30px;
+    margin-top: 30px;
 }
 
 .botoes-carrossel {
