@@ -38,6 +38,12 @@ main:after {
     color: rgb(255, 255, 255);
     line-height: 30px;
     margin-top: 30px;
+    display: none;
+    object-fit: cover;
+}
+
+.informacoes .descricao.ativa2 {
+    display: block;
 }
 
 .botoes-carrossel {
